@@ -17,6 +17,20 @@
       padding: 0;
       border: none;
     }
+    .resp img {
+      width: 100%;
+    }
+    .resp {
+      display: none;
+    }
+    @media screen and (max-width: 764px) {
+      .resp {
+        display: initial;
+      }
+      img:not(.resp) {
+        display: none;
+      }
+    }
   </style>
 </head>
 <body>
@@ -25,5 +39,6 @@
   <img src="acustica.jpg" alt="">
   <img src="clasica.jpg" alt="">
   <img src="footer.jpg" alt="">
+  <img src="responsive.png" class="resp" alt="">
 </body>
 </html>
