@@ -27,6 +27,17 @@
     .margins {
       margin-bottom: 150px;
     }
+    .bigger-screen {
+      display: none;
+    }
+    @media screen and (min-width: 1000px) {
+      .bigger-screen {
+        display: initial;
+      }
+      img:not(.bigger-screen) {
+        display: none;
+      }
+    }
     @media screen and (max-width: 764px) {
       .resp {
         display: initial;
@@ -44,5 +55,6 @@
   <img src="clasica.jpg" class="margins" alt="">
   <img src="footer.jpg" alt="">
   <img src="responsive.png" class="resp" alt="">
+  <img src="green.jpg" class="bigger-screen" alt="">
 </body>
 </html>
